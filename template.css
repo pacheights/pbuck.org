@@ -56,16 +56,15 @@
 body {
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
-	background-color: #1c1c1c;
+	/*background-color: #1c1c1c;*/
 }
 
 #body {
 	padding-top: 50px;
 	padding-left: 20vw;
 	padding-right: 20vw;
-	padding bottom: 10vh;
+	padding bottom: 100px;
 	background-color: white;
-	height: 100vh;
 }
 
 p {
@@ -80,23 +79,6 @@ h1 {
 	color: #262626;
 	font-style: italic;
 	text-decoration: underline;
-}
-
-/*------ Footer ------*/
-#footer {
-	height: 5vh;
-	background-color: #1c1c1c;
-    padding-top: 30px;
-    margin-bottom: 0;
-	text-align: center;
-}
-
-#footer_text {
-	margin-bottom: 0;
-	font-weight: lighter;
-	font-size: 18px;
-	font-family: 'Monserrat', sans-serif;
-	color:	#f0f0f0;
 }
 
 /*----- Mobile Display -----*/
@@ -160,14 +142,6 @@ h1 {
 	#body {
 		padding-top: 50px;
 		background-color: white;
-		height: 120vh;
-	}
-
-	/*----- Footer -----*/
-	#footer {
-		height: 20vh;
-		background-color: #1c1c1c;
-	    padding-bottom: 0;
-	    margin-bottom: -120px;
+		height: 100vh;
 	}
 }
