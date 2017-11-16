@@ -2,7 +2,6 @@
 var fadeInElements = 5;
 var display = false;
 
-
 $(document).ready(function() {
 
     for (var i = 0; i < fadeInElements; i++) {
@@ -32,8 +31,6 @@ function menuDropdown() {
         display = false;
     }
 }
-
-function setup() {}
 
 function draw() {
     if (innerWidth > 750) {
