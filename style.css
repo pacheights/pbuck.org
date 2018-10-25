@@ -1,20 +1,18 @@
 /*------ Header ------*/
 #navigation_bar {
 	background-color: #1c1c1c;
-	list-style: none;
 	text-align: right;
-  overflow: hidden;
-	margin: 0 0 0 0;
+	margin: 0;
 	padding: 30px 0px 30px 0px;
-	height: 30px;
+	height: 28px;
 }
 
 #navigation_bar > li {
 	font-family: 'Montserrat','Arial-Light', sans-serif;
   font-size: 14px;
-	/*display: inline-block;*/
-	display: none;
+	display: inline-block;
 	padding-right: 50px;
+	letter-spacing: 5px;
   margin-top: 4px;
 }
 
@@ -27,29 +25,19 @@
 	color: white;
 }
 
-#navigation_bar > img {
-    display: none;
-}
-
-.nav_elements {
-	display: none;
-}
-
 #dropdown  > ul {
   display: none;
 }
 
-.logo {
+.name {
 	font-family: 'Montserrat', sans-serif;
 	float: left;
   font-size: 22px;
-  margin-top: 0px;
 	padding-left: 30px;
-	display: none;
 	letter-spacing: 4px;
 }
 
-.logo > a {
+.name > a {
 	text-decoration: none;
 	color: white;
 }
@@ -64,24 +52,22 @@ body {
 	padding-top: 50px;
 	padding-left: 20vw;
 	padding-right: 20vw;
-	padding-bottom: 100px;
 	background-color: white;
 }
 
-h1 {
-	font-family: 'Montserrat','Arial-Light', sans-serif;
-	font-size: 45px;
-	font-weight: 100;
+#portfolio-title {
+	font-family: 'Futura', 'Arial-Light', sans-serif;
+	letter-spacing: 8px;
+	font-size: 34px;
 	color: #262626;
-	margin-top: 0px;
-	margin-bottom: 40px;
-	border-bottom: 1px solid black;
-	width: 200px;
+	margin-top: 0;
+	margin-bottom: 70px;
 }
 
 .portfolio-piece {
+	margin: 0 auto;
 	display: inline-flex;
-	margin-bottom: 50px;
+	margin-bottom: 55px;
 }
 
 .portfolio-piece > .info > p {
@@ -104,8 +90,8 @@ h1 {
 	color: black;
 	font-family: 'Montserrat','Arial-Light', sans-serif;
 	font-size: 24px;
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
+	margin: 0;
+	padding: 0;
 }
 
 #github > img {
@@ -118,31 +104,30 @@ h1 {
 	.portfolio-piece {
 		display: block;
 	}
+
+	.portfolio-piece a img {
+		margin: 0 auto;
+		text-align: center;	
+		padding: 0;
+		margin-bottom: 20px;
+	}
 }
 
 @media screen and (max-width: 750px) {
 	/*----- Header -----*/
 
-  #navigation_bar > li {
-      display: none !important;
-  }
-
-  #navigation_bar > img {
-  	display: -block;
-		width: 28px;
-		
-    height: 20px;
-    padding-right: 35px;
-    padding-bottom: 0px;
-    margin-top: 3px;
+	.name {
+		float: none;
+		text-align: center;
 	}
 
-	#navigation_bar > img:hover {
-  	cursor: pointer;
+  #navigation_bar > li {
+      display: none;
   }
 
   #dropdown {
-    text-align: right;
+		text-align: right;
+		display: none;
   }
 
   #dropdown > ul{
@@ -150,9 +135,8 @@ h1 {
     font-family: 'Montserrat','Arial-Light', sans-serif;
     font-size: 16px;
     list-style-type: none;
-    float: right;
 		display: inline-block;
-    margin: 0;
+		margin: 0;
   }
 
   #dropdown > ul > li {
@@ -176,8 +160,8 @@ h1 {
 
 	/*------ Body ------*/
 	body {
-		margin: 0px 0px 0px 0px;
-		padding: 0px 0px 0px 0px;
+		margin: 0;
+		padding: 0;
 		background-color: white;
 	}
 
@@ -193,4 +177,5 @@ h1 {
 		margin:0 auto;
 		margin-bottom: 50px;
 	}
+
 }
