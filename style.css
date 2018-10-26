@@ -116,6 +116,10 @@ body {
 		padding: 0;
 	}
 
+	.portfolio-piece {
+		margin-bottom: 35px;
+	}
+
 	.portfolio-piece p {
 		padding: 0 20%;
 	}
@@ -127,6 +131,7 @@ body {
 	.name {
 		float: none;
 		text-align: center;
+		padding-left: 0;
 	}
 
   #navigation_bar > li {
