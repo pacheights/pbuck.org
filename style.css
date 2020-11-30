@@ -2,26 +2,28 @@
 #navigation_bar {
 	background-color: #1c1c1c;
 	text-align: right;
-	margin: 0;
-	padding: 30px 0px 30px 0px;
-	height: 28px;
+	height: 64px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 0px;	
 }
 
-#navigation_bar > li {
+.links-container > li {
 	font-family: 'Montserrat','Arial-Light', sans-serif;
   font-size: 14px;
 	display: inline-block;
 	padding-right: 50px;
 	letter-spacing: 5px;
-  margin-top: 4px;
 }
 
-#navigation_bar > li > a {
+.links-container > li > a {
 	text-decoration: none;
 	color: #f4f4f4;
+	animation: fadeIn ease 1.5s;
 }
 
-#navigation_bar > li > a:hover {
+.links-container > li > a:hover {
 	color: white;
 }
 
@@ -32,9 +34,14 @@
 .name {
 	font-family: 'Montserrat', sans-serif;
 	float: left;
-  font-size: 22px;
-	padding-left: 30px;
-	letter-spacing: 4px;
+  font-size: 14px;
+	letter-spacing: 8px;
+	animation: fadeIn ease 1.5s;
+}
+
+@keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
 }
 
 .name > a {
@@ -128,13 +135,17 @@ body {
 @media screen and (max-width: 750px) {
 	/*----- Header -----*/
 
-	.name {
-		float: none;
-		text-align: center;
+	#navigation_bar {
+		justify-content: center;
 		padding-left: 0;
 	}
 
-  #navigation_bar > li {
+	.name {
+		float: none;
+		text-align: center;
+	}
+
+  .links-container > li {
   	display: none;
   }
 
@@ -143,7 +154,7 @@ body {
 		display: none;
   }
 
-  #dropdown > ul{
+  #dropdown > ul {
     background-color: #1c1c1c;
     font-family: 'Montserrat','Arial-Light', sans-serif;
     font-size: 16px;
