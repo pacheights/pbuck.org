@@ -1,0 +1,52 @@
+#portfolio {
+  margin-bottom: 30px;
+}
+
+.portfolio-piece {
+  margin: 0 auto;
+  display: inline-flex;
+  margin-bottom: 55px;
+}
+
+.portfolio-piece > .info > p {
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+}
+
+.rect-img {
+  height: 200px;
+  width: 250px;
+}
+
+.portfolio-piece > .info > a {
+  outline: none;
+  text-decoration: none;
+}
+
+.portfolio-piece > .info > a > h3 {
+  color: black;
+  font-family: 'Montserrat', 'Arial-Light', sans-serif;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 680px) {
+  .portfolio-piece {
+    display: block;
+  }
+
+  .portfolio-piece a img {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .portfolio-piece {
+    margin-bottom: 35px;
+  }
+
+  .portfolio-piece p {
+    padding: 0 20%;
+  }
+}

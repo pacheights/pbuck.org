@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pearson Buck | Creator</title>
   <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="./portfolio.css">
+  <link rel="stylesheet" type="text/css" href="./resume.css">
   <style>
       @import url('https://fonts.googleapis.com/css?family=Montserrat');
       @import url('https://fonts.googleapis.com/css?family=Montserrat-Light');
@@ -30,58 +32,121 @@
 
 <!-- Body -->
   <div id="body">
-    <h1 id="portfolio-title">PORTFOLIO</h1>
-
-    <div id="idea-collection" class="portfolio-piece">
-      <a href=http://urlwee.com/pbidea>
-        <img src="./img/ideas.png">
-      </a>
-      <div class="info">
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <h1 class="title">PORTFOLIO</h1>
+      <div id="idea-board" class="portfolio-piece">
         <a href=http://urlwee.com/pbidea>
-          <h3>Idea Collection</h3>
+          <img class="rect-img base-img" src="./img/ideas.png">
         </a>
-        <p>
-          A vanilla JS fullstack web app that keeps track of all of my ideas for web apps, mobile apps, and any other creative outlets.
-          I am able to create, read, update, and delete entries — all actions are password protected.
-          The website is fully responsive. Deployed to an AWS EC2.
-        </p>
-        <a id="github" href="https://github.com/pacheights/idea-collection">
-          <img src="./img/github.svg">
-        </a>
+        <div class="info">
+          <a href=http://urlwee.com/pbidea>
+            <h3>Idea Board</h3>
+          </a>
+          <p>
+            A vanilla JS fullstack web app that keeps track of all of my ideas for web apps, mobile apps, and any other creative outlets.
+            I am able to create, read, update, and delete entries — all actions are password protected.
+            The website is fully responsive. Deployed to an AWS EC2.
+          </p>
+          <a id="github" href="https://github.com/pacheights/idea-board">
+            <img src="./img/github.svg">
+          </a>
+        </div>
       </div>
-    </div>
-
-    <div id="quoter" class="portfolio-piece">
-      <a href=https://www.pointsails.com/sail-quoter.html>
-        <img src="./img/quoter.png">
-      </a>
-      <div class="info">
+  
+      <div id="quoter" class="portfolio-piece">
         <a href=https://www.pointsails.com/sail-quoter.html>
-          <h3>Point Sails — Sail Quoter</h3>
+          <img class="rect-img base-img" src="./img/quoter.png">
         </a>
-        <p>
-          Frontend widget embedded in a Weebly site that allows customers to quote a price for a sailboat sail.
-          Implemented in HTML, CSS, and JS. Backend server developed in Node.js and deployed to Heroku.
-        </p>
+        <div class="info">
+          <a href=https://www.pointsails.com/sail-quoter.html>
+            <h3>Point Sails — Sail Quoter</h3>
+          </a>
+          <p>
+            Frontend widget embedded in a Weebly site that allows customers to quote a price for a sailboat sail.
+            Implemented in HTML, CSS, and JS. Backend server developed in Node.js and deployed to Heroku.
+          </p>
+        </div>
       </div>
+  
+      <div id="stock-chart" class="portfolio-piece">
+        <a href="http://pbuckstockchart.now.sh/">
+          <img class="rect-img base-img" src="./img/stockchart.png">
+        </a>
+        <div class="info">
+          <a href="http://pbuckstockchart.now.sh/">
+            <h3>Stock Chart</h3>
+          </a>
+          <p>
+            A stock charting application that displays 15 trading-days worth of historical prices. 
+            The application was developed using p5.js library - courtesy of the Processing Foundation. 
+            Data is pulled from the Alpha Vantage equity API. 
+          </p>
+          <a id="github" href="https://github.com/pacheights/Stock-Chart">
+            <img src="./img/github.svg">
+          </a>
+        </div>
+      </div>  
     </div>
 
-    <div id="stock-chart" class="portfolio-piece">
-      <a href="http://pbuckstockchart.now.sh/"><img src="./img/stockchart.png"></a>
-      <div class="info">
-        <a href="http://pbuckstockchart.now.sh/"><h3>Stock Chart</h3></a>
-        <p>
-          A stock charting application that displays 15 trading-days worth of historical prices. 
-          The application was developed using p5.js library - courtesy of the Processing Foundation. 
-          Data is pulled from the Alpha Vantage equity API. 
-        </p>
-        <a id="github" href="https://github.com/pacheights/Stock-Chart">
-          <img src="./img/github.svg">
+    <!-- Resume -->
+    <div id="resume">
+      <h1 class="title">RESUME</h1>
+      <div class="portfolio-piece">
+        <a href=http://castifi.com>
+          <img class="square-img base-img" src="./img/castifi.png">
         </a>
+        <div class="info">
+          <a href=http://castifi.com>
+            <h3>Software Engineer - Castifi</h3>
+          </a>          
+          <p>
+            • JavaScript / TypeScript, HTML5, CSS, Python, SQL
+          </p>
+          <p>
+            • Engineered casting and payroll software used by production companies including Netflix and HBO
+          </p>
+          <p>
+            • Migrated an Ionic / Angular.js app to React and React Native
+          </p>
+          <p>
+            • Deployed mobile apps to Apple App Store and Google Play Store
+          </p>
+        </div>
+      </div>
+      <div class="portfolio-piece">
+        <a href=http://chirotouch.com>
+          <img class="square-img base-img" src="./img/chirotouch.png">
+        </a>
+        <div class="info">
+          <a href=http://chirotouch.com>
+            <h3>Software Engineer Intern - ChiroTouch</h3>
+          </a>
+          <p>
+            • Wrote a unit and integration test suite with Mocha and Chai
+          </p>
+          <p>
+            • Performed manual tests on new features and documented issues in a JIRA ticketing system.
+          </p>
+        </div>
+      </div>
+      <div class="portfolio-piece">
+        <a href=http://sdsu.edu>
+          <img class="square-img base-img" src="./img/sdsu.png">
+        </a>
+        <div class="info">
+          <a href=http://sdsu.edu>
+            <h3>B.S. Computer Science — San Diego State University</h3>
+          </a>
+          <p>
+            • Graduated 2020
+          </p>
+          <p>
+            • Dean’s List: 2015 and 2017
+          </p>
+        </div>
       </div>
     </div>
-
   </div>
-
 </body>
 </html>
